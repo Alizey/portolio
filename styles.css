@@ -78,4 +78,77 @@ li::after{
   
 }
 
+.name{
+    width:0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:1px solid white;
+    animation:name 5s steps(25) ;
+    animation-fill-mode: forwards;
+}
+
+.front-end{
+    width:0ch;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    animation:front-end 5s steps(34) ;
+    animation-fill-mode: forwards;
+   animation-delay:3s
+}
+@keyframes name{
+    0%{
+        width:0ch;
+       
+    }
+    50%{
+        width:25ch;
+        }
+
+  100%{
+    width:25ch;
+    border-right: 0px;
+  }
+}
+
+@keyframes front-end{
+    0%{
+        width:0ch;
+       
+    }
+    50%{
+        width:34ch;
+       
+        }
+    100%{
+    width:34ch;
+   
+   
+  }
+}
+
+.contact{
+    width:0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:contact 5s steps(38) ;
+    animation-fill-mode: forwards;
+    animation-delay:5.8s
+}
+
+@keyframes contact{
+    0%{
+        width:0ch;
+       
+    }
+    50%{
+        width:40ch;
+       
+        }
+    100%{
+    width:40ch;
+   
+   
+  }
+}
 
