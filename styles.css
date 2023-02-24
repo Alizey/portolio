@@ -75,15 +75,18 @@ body{
 }
 
 nav ul{
-   display: flex;
-   justify-content: end;
-   margin: 2%;
- 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2%;
+  
 }
 
 nav li{
+   
+    
     list-style: none;
-    padding: 2%;
+   padding: 2%;
 }
 
 nav a{
@@ -113,8 +116,8 @@ nav li::after{
 }
 
 .intro{
-  
-   margin-left: 5%;
+   margin-top: 40%;
+   margin-left: 15%;
    font-size: clamp( 2.2rem, 2.2vw, 8rem);
    
  
@@ -221,9 +224,10 @@ nav li::after{
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 760px) {
     .intro{
-      margin-top:50%;
+     margin-top:2%;
+     margin-left: 5%;
 
     }
   }
