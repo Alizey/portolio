@@ -6,12 +6,15 @@ body{
    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
   /* background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);*/
  
-  font-family: 'Courier New', Courier, monospace;
+ /* font-family: 'Courier New', Courier, monospace;*/
+ font-family: 'Labrada', serif;
+
+
     color:white;
    background-size: cover;
    background-position: center;
 
-    font-size: clamp( 2rem, 2vw, 8rem);
+  
 
 }
 
@@ -65,6 +68,7 @@ body{
 .home{
     width:100%;
     position: absolute;
+ 
   
    
     
@@ -111,6 +115,7 @@ nav li::after{
 .intro{
   
    margin-left: 5%;
+   font-size: clamp( 2.2rem, 2.2vw, 8rem);
    
  
 }
@@ -216,12 +221,12 @@ nav li::after{
   }
 }
 
-/*@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 760px) {
     .intro{
-       top:50%;
+      margin-top:50%;
 
     }
-  }*/
+  }
 
 
 
