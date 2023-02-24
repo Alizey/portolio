@@ -9,7 +9,7 @@ body{
  /* font-family: 'Courier New', Courier, monospace;*/
  font-family: 'Labrada', serif;
 
-
+ font-size: clamp( 1rem, 2.5vw, 8rem);
     color:white;
    background-size: cover;
    background-position: center;
@@ -86,14 +86,14 @@ nav li{
    
     
     list-style: none;
-   padding: 2%;
+   padding-left: 2%;
 }
 
 nav a{
     color:#f6f6e9;
     font-weight: bold;
     text-decoration: none;
-    font-size: clamp( 1.5rem, 1.5vw, 8rem);
+  /*  font-size: clamp( 1rem, 1.5vw, 8rem);*/
 }
 
 
@@ -118,7 +118,8 @@ nav li::after{
 .intro{
    margin-top: 40%;
    margin-left: 15%;
-   font-size: clamp( 2.2rem, 2.2vw, 8rem);
+
+   font-size: clamp( 1rem, 2.5vw, 8rem);
    
  
 }
@@ -224,10 +225,10 @@ nav li::after{
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 800px) {
     .intro{
-     margin-top:2%;
-     margin-left: 5%;
+        margin-top:2%;
+        margin-left: 5%;
 
     }
   }
