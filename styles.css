@@ -51,7 +51,7 @@ nav a{
 }
 
 
-li::after{
+nav li::after{
     content:'';
     width:0;
     height: 1px;
@@ -71,14 +71,12 @@ li::after{
 
 .intro{
   
-   display:flex;
-   flex-direction: column;
-   align-items: center;
+   margin-left: 5%;
    
  
 }
 
-.intro a{
+.intro li a{
     text-decoration: none;
     color:#F2AA4CFF;
     
@@ -96,26 +94,29 @@ li::after{
 }*/
 
 
-.intro a:hover{
+.intro li a:hover{
     cursor: pointer;
-    color:#101820FF;
-    -webkit-text-stroke: 0.8px #F2AA4CFF ;
+    color:#F2AA4CFF;
+    -webkit-text-stroke: 0.1px white ;
+  
+}
+.animation-common{
+    width:0ch;
+    white-space: nowrap;
+    overflow: hidden;
+   /* border-right:1px solid white;*/
   
 }
 
 .name{
-    width:0ch;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right:1px solid white;
+    
     animation:name 3s steps(25) ;
     animation-fill-mode: forwards;
+   
 }
 
 .front-end{
-    width:0ch;
-    white-space: nowrap;
-    overflow: hidden;
+   
    
     animation:front-end 3s steps(34) ;
     animation-fill-mode: forwards;
@@ -153,9 +154,7 @@ li::after{
 }
 
 .contact{
-    width:0ch;
-    white-space: nowrap;
-    overflow: hidden;
+   
     animation:contact 3s steps(38) ;
     animation-fill-mode: forwards;
     animation-delay:3s
@@ -179,11 +178,11 @@ li::after{
 
 /*@media only screen and (max-width: 760px) {
     .intro{
-        display: flex;
+       top:50%;
 
     }
-  }
-*/
+  }*/
+
 
 
 
