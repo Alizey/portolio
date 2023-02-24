@@ -15,6 +15,45 @@ body{
 
 }
 
+.preload{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100vh; 
+    background-color: black;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 1.5s ease
+  }
+
+
+.preload-finish{
+   
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preloader-image{
+    width:30%;
+    position: absolute;
+    left:35%;
+    top:20%;
+   
+    animation:  fade-in  1s ease-in forwards
+   
+}
+
+@keyframes fade-in {
+    from {
+        opacity:1
+    }
+    to{
+        opacity: 0;
+    }
+    
+}
+
+
 #particles-js{
    
     position: relative;
@@ -112,6 +151,7 @@ nav li::after{
     
     animation:name 3s steps(25) ;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
    
 }
 
@@ -120,7 +160,7 @@ nav li::after{
    
     animation:front-end 3s steps(34) ;
     animation-fill-mode: forwards;
-   animation-delay:1.5s
+   animation-delay:2.4s
 }
 @keyframes name{
     0%{
@@ -157,7 +197,7 @@ nav li::after{
    
     animation:contact 3s steps(38) ;
     animation-fill-mode: forwards;
-    animation-delay:3s
+    animation-delay:4s
 }
 
 @keyframes contact{
