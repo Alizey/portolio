@@ -39,8 +39,8 @@ body{
 .preloader-image{
     width:30%;
     position: absolute;
-    left:35%;
-    top:20%;
+    left:32%;
+    top:35%;
    
     animation:  fade-in  3s ease-in forwards
    
@@ -86,14 +86,14 @@ nav li{
    
     
     list-style: none;
-   padding-left: 2%;
+   padding-left: 4%;
 }
 
 nav a{
     color:#f6f6e9;
     font-weight: bold;
     text-decoration: none;
-  /*  font-size: clamp( 1rem, 1.5vw, 8rem);*/
+   font-size: clamp( 1rem, 1.5vw, 8rem);
 }
 
 
@@ -119,7 +119,7 @@ nav li::after{
    margin-top: 40%;
    margin-left: 15%;
 
-   font-size: clamp( 1rem, 2.5vw, 8rem);
+  
    
  
 }
@@ -144,8 +144,8 @@ nav li::after{
 
 .intro li a:hover{
     cursor: pointer;
-    color:#F2AA4CFF;
-    -webkit-text-stroke: 0.1px white ;
+    color:black;
+    -webkit-text-stroke: 0.8px white ;
   
 }
 .animation-common{
@@ -227,9 +227,14 @@ nav li::after{
 
 @media only screen and (min-width: 800px) {
     .intro{
-        margin-top:2%;
+        margin-top:1%;
         margin-left: 5%;
 
+    }
+
+    .preloader-image{
+        left: 35%;
+        top:20%;
     }
   }
 
