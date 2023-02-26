@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Elizay</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
         <link href="styles.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,13 @@
             <section class="home">
 
                 <nav>
-                    <ul>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <ul class="nav-links">
                          <li><a href="#">About Me</a></li>
                          <li><a href="#">Portfolio</a></li>
                          <li><a href="#">Contact Me</a></li>
@@ -54,6 +60,15 @@
             const preload = document.querySelector('.preload');
             preload.classList.add('preload-finish');
             })
+
+            const hamburger = document.querySelector('.hamburger');
+            const navlinks = document.querySelector('.nav-links');
+            const links = document.querySelectorAll('.nav-links li');
+        
+            hamburger.addEventListener('click' , ()=>{
+                navlinks.classList.toggle('open');
+            })
+
 
         </script>
       
